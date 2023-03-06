@@ -1,0 +1,420 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.3;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: fit-content;
+  margin: auto;
+}
+@media screen and (min-width: 1220px) {
+  .container {
+    width: 1220px;
+    margin: auto;
+  }
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 1em;
+}
+@media screen and (min-width: 768px) {
+  header nav {
+    padding: 1em 2em;
+  }
+}
+@media screen and (min-width: 768px) {
+  header nav .menu {
+    display: none;
+  }
+}
+header nav .logos {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+header nav .logos .recrowd {
+  width: 2.2em;
+  height: 1em;
+}
+header nav .logo {
+  color: black;
+  font-weight: 500;
+}
+header nav ul {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  header nav ul {
+    display: flex;
+    gap: 1.5em;
+    list-style-type: none;
+  }
+  header nav ul a {
+    color: black;
+  }
+  header nav ul .meeting {
+    background-color: rgba(111, 3, 244, 0.956);
+    color: white;
+    padding: 0.5em 1em;
+    border-radius: 20px;
+  }
+}
+
+section {
+  padding: 3em 0;
+}
+
+.hero-section {
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+.hero-section .hero {
+  width: 80%;
+  margin: 0 auto;
+}
+@media screen and (min-width: 1024px) {
+  .hero-section .hero {
+    width: 80%;
+    padding: 0 10em;
+  }
+}
+.hero-section h2 {
+  font-size: 2em;
+}
+@media screen and (min-width: 1024px) {
+  .hero-section h2 {
+    font-size: 2.7em;
+  }
+}
+.hero-section p {
+  padding: 1em 0;
+}
+.hero-section button {
+  padding: 0.7em 1em;
+  border: none;
+  cursor: pointer;
+  background-color: rgba(111, 3, 244, 0.956);
+  color: white;
+  width: 35%;
+  border-radius: 20px;
+}
+
+@media screen and (min-width: 1024px) {
+  .features-section {
+    padding: 6em 0;
+  }
+}
+.features-section .features {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+@media screen and (min-width: 1024px) {
+  .features-section .features {
+    text-align: left;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2em 4em;
+  }
+}
+.features-section .features-content {
+  margin-bottom: 2.4em;
+}
+.features-section h2 {
+  color: rgba(111, 3, 244, 0.956);
+}
+@media screen and (min-width: 1024px) {
+  .features-section h2 {
+    width: 60%;
+  }
+}
+.features-section .features-paragraph {
+  padding: 1em 0;
+}
+@media screen and (min-width: 1024px) {
+  .features-section .features-paragraph {
+    width: 90%;
+  }
+}
+.features-section .features-paragraph-2 {
+  font-weight: bold;
+}
+@media screen and (min-width: 1024px) {
+  .features-section .features-paragraph-2 {
+    width: 90%;
+  }
+}
+.features-section img {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.sponsor {
+  background-color: rgba(111, 3, 244, 0.311);
+}
+.sponsor .spons-image {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+.sponsor .spons-image img {
+  padding-bottom: 1em;
+}
+@media screen and (min-width: 1024px) {
+  .sponsor .spons-image img {
+    padding-right: 2em;
+  }
+}
+
+.selected {
+  text-align: center;
+}
+@media screen and (min-width: 1024px) {
+  .selected {
+    text-align: center;
+  }
+}
+.selected .works {
+  width: 80%;
+  margin: 0 auto;
+}
+@media screen and (min-width: 1024px) {
+  .selected .works {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .selected .selected-work-features {
+    display: flex;
+    margin: 0;
+  }
+}
+.selected .selected-work-features .work-features {
+  margin-bottom: 0.9em;
+  padding: 1em 2em;
+}
+@media screen and (min-width: 1024px) {
+  .selected .selected-work-features .work-features {
+    text-align: left;
+  }
+}
+.selected .selected-work-features .work-features h3 {
+  color: rgba(111, 3, 244, 0.956);
+}
+.selected .selected-work-features .work-features img {
+  width: 100%;
+  height: 10em;
+  margin: 1em 0;
+}
+@media screen and (min-width: 1024px) {
+  .selected .selected-work-features .work-features img {
+    width: 100%;
+  }
+}
+.selected .selected-work-features .work-features h4 {
+  color: rgba(111, 3, 244, 0.956);
+}
+.selected .selected-work-features .work-features .selected-paragraph-1 {
+  padding: 1em 0;
+  font-weight: 300;
+}
+.selected .selected-work-features .work-features .selected-paragraph-2 {
+  padding: 0 0 1em;
+  font-weight: bold;
+}
+.selected .selected-work-features .work-features .selected-paragraph-3 {
+  padding: 0 0 1em;
+}
+
+.services {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+.services .services-content {
+  width: 80%;
+  margin: 0 auto;
+}
+@media screen and (min-width: 1024px) {
+  .services .services-content {
+    margin: auto;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .services .services-content-features {
+    display: flex;
+    gap: 1em;
+    margin: 0 auto;
+  }
+}
+.services .services-content-features .content-features {
+  background-color: white;
+  color: black;
+  padding: 4em 2em;
+  margin-top: 1em;
+}
+@media screen and (min-width: 1024px) {
+  .services .services-content-features .content-features {
+    padding: 3em 1em;
+  }
+}
+.services .services-content-features .content-features img {
+  width: 1em;
+}
+.services .services-content-features .content-features h4 {
+  padding: 1em 0;
+}
+.pricing {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+.pricing .pricing-content {
+  width: 80%;
+  margin: 0 auto;
+}
+.pricing .pricing-content .pricing-content-features {
+  padding: 2em;
+  margin-bottom: 2em;
+}
+@media screen and (min-width: 1024px) {
+  .pricing .pricing-content .pricing-content-features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 10px;
+  }
+}
+.pricing .pricing-content .pricing-content-features .features-background {
+  background-color: white;
+  padding: 3em 1em 1.3em;
+  margin-bottom: 0.7em;
+}
+.pricing .pricing-content .pricing-content-features .features-background h4 {
+  color: black;
+}
+.pricing .pricing-content .pricing-content-features .features-background .pricing-features {
+  background-color: rgba(111, 3, 244, 0.956);
+  padding: 0.5em 14px;
+  text-align: left;
+}
+.pricing .pricing-content .pricing-content-features .features-background .pricing-features .pricing-features-content input {
+  padding: 0.5em 1.2em;
+  font-weight: bold;
+}
+.pricing .pricing-content .pricing-content-features .features-background .pricing-features .pricing-features-content .tag1 {
+  padding-bottom: 6em;
+}
+.pricing .pricing-content .pricing-content-features .features-background .pricing-features .pricing-features-content .price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 3px solid white;
+  padding: 1.5em 0;
+  margin: 1em;
+}
+.pricing .pricing-content .pricing-content-features .features-background .pricing-features .pricing-features-content .price1 {
+  display: flex;
+  justify-content: space-between;
+}
+.pricing .pricing-content .pricing-content-features .features-background .pricing-features .pricing-features-content .price-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.testimonial {
+  background-color: white;
+  color: white;
+  text-align: center;
+  line-height: 1.5;
+}
+@media screen and (min-width: 1024px) {
+  .testimonial .testimonial-content1 {
+    width: fit-content;
+    display: flex;
+    gap: 2em;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.testimonial .testimonial-report {
+  width: 300px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 1024px) {
+  .testimonial .testimonial-report {
+    width: 300px;
+    margin: 0 auto;
+  }
+}
+.testimonial .statement {
+  color: black;
+}
+.testimonial .testimonial-report {
+  background-color: rgba(111, 3, 244, 0.956);
+  padding: 2em 1em 1.2em;
+  margin: auto;
+}
+.testimonial .testimonial-report img {
+  width: 3em;
+  border-radius: 50%;
+  border: 3px solid white;
+}
+
+.footer {
+  background-color: black;
+  color: white;
+}
+.footer .footer-content {
+  width: 80%;
+  margin: 0 auto;
+}
+@media screen and (min-width: 1024px) {
+  .footer .footer-content {
+    width: 60%;
+    margin: 0 5.3em;
+  }
+}
+.footer .footer-content h3 {
+  font-size: 1.7em;
+  padding: 0.2em 0;
+}
+.footer .footer-content input {
+  padding: 0.5em;
+  border: none;
+  padding: 1em 1em;
+}
+@media screen and (min-width: 1024px) {
+  .footer .footer-content input {
+    padding: 1em 1em;
+  }
+}
+.footer .footer-content .email {
+  margin: 1em 0;
+  width: 60%;
+}
+.footer .footer-content .email:focus {
+  outline: none;
+}
+.footer .footer-content .subscribe {
+  background-color: rgba(111, 3, 244, 0.956);
+  margin-left: -0.5em;
+  color: white;
+}
+
+/*# sourceMappingURL=output.css.map */

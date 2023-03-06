@@ -1,0 +1,521 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.3;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: fit-content;
+    margin: auto;
+
+    @media screen and (min-width: 1220px) {
+        width: 1220px;
+        margin: auto;
+    }
+    // padding: 1em 0;
+}
+
+header {
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: white;
+        padding: 1em;
+
+        @media screen and (min-width: 768px) {
+            padding: 1em 2em;
+        }
+
+        .menu {
+
+            @media screen and (min-width: 768px) {
+                display: none;
+            }
+        }
+    
+        .logos {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            .recrowd {
+                width: 2.2em;
+                height: 1em;
+            }
+        }
+    
+        .logo {
+            color: black;
+            font-weight: 500;
+        }
+    
+        ul {
+            display: none;
+
+            @media screen and (min-width: 768px) {
+                display: flex;
+                gap: 1.5em;
+                list-style-type: none;
+                // color: black;
+                // justify-content: space-between;
+
+                a {
+                    color: black;
+                }
+
+                .meeting {
+                    background-color: rgba(111, 3, 244, 0.956);
+                    color: white;
+                    padding: 0.5em 1em;
+                    border-radius: 20px;
+                }
+            }
+        }
+    }
+}
+
+
+section {
+    padding: 3em 0;
+}
+
+.hero-section {
+    text-align: center;
+    background-color: black;
+    color: white;
+
+    .hero {
+        width: 80%;
+        margin: 0 auto;
+
+        @media  screen and (min-width: 1024px) {
+            width: 80%;
+            padding: 0 10em;
+        }
+    }
+
+        h2 {
+            font-size: 2em;
+
+            @media  screen and (min-width: 1024px) {
+                font-size: 2.7em; 
+            }
+            
+            // background-color: red;
+        }
+
+    p {
+        padding: 1em 0;
+    }
+
+    button {
+        padding: 0.7em 1em;
+        border: none;
+        cursor: pointer;
+        background-color: rgba(111, 3, 244, 0.956);
+        color: white;
+        width: 35%;
+        border-radius: 20px;
+    }
+}
+
+.features-section {
+
+    @media  screen and (min-width: 1024px) {
+        padding: 6em 0;
+    }
+    
+    .features {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+
+        @media  screen and (min-width: 1024px) {
+        }
+
+        @media  screen and (min-width: 1024px) {
+            text-align: left;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 2em 4em;
+            
+        }
+    }
+
+    .features-content {
+        margin-bottom: 2.4em;
+
+        // remind me, not applying to the last child
+    }
+
+    h2 {
+        color: rgba(111, 3, 244, 0.956);
+        @media  screen and (min-width: 1024px) {
+            width: 60%;
+        }
+    }
+
+    .features-paragraph {
+        padding: 1em 0;
+
+        @media  screen and (min-width: 1024px) {
+            width: 90%;
+        }
+    }
+
+    .features-paragraph-2 {
+        font-weight: bold;
+
+        @media  screen and (min-width: 1024px) {
+            width: 90%;
+        }
+    }
+
+    img {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+.sponsor {
+        background-color: rgba(111, 3, 244, 0.311);
+    .spons-image {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+        
+        img {
+            padding-bottom: 1em;
+            @media screen and (min-width: 1024px) {
+                padding-right: 2em
+            }
+        } 
+    }
+}
+
+.selected {
+    text-align: center;
+
+    @media screen and (min-width: 1024px) {
+        text-align: center;
+    }
+
+    .works {
+        width: 80%;
+        margin: 0 auto;
+
+        @media screen and (min-width: 1024px) {
+            width: 100%;
+            // text-align: left;
+        }
+    }
+
+    .selected-work-features {
+
+        @media screen and (min-width: 1024px) {
+            
+            display: flex;
+            margin: 0;
+        }
+
+        .work-features {
+            margin-bottom: 0.9em;
+            padding: 1em 2em;
+
+            @media screen and (min-width: 1024px) {
+                text-align: left;
+            }
+
+            h3 {
+                color: rgba(111, 3, 244, 0.956)
+            }
+        
+            img {
+                width: 100%;
+                height: 10em;
+                margin: 1em 0;
+
+                @media screen and (min-width: 1024px) {
+                    width: 100%;
+                }
+            }
+        
+            h4 {
+                color: rgba(111, 3, 244, 0.956)
+            }
+        
+            .selected-paragraph-1 {
+                padding: 1em 0;
+                font-weight: 300;
+            }
+        
+            .selected-paragraph-2 {
+                padding: 0 0 1em;
+                font-weight: bold;
+            }
+        
+            .selected-paragraph-3 {
+                padding: 0 0 1em;
+            }
+        }
+    }
+
+    
+}
+
+.services {
+    background-color: black;
+    color: white;
+    text-align: center;
+
+    
+
+    .services-content {
+        width: 80%;
+        margin: 0 auto;
+
+        @media screen and (min-width: 1024px) {
+            
+            margin: auto;
+        }
+
+        
+    }
+
+    .services-content-features {
+
+        @media screen and (min-width: 1024px) {
+            display: flex;
+            gap: 1em;
+            margin: 0 auto;
+        }
+        
+        .content-features {
+            background-color: white;
+            color: black;
+            padding: 4em 2em;
+            margin-top: 1em;
+
+            @media screen and (min-width: 1024px) {
+                padding: 3em 1em;
+            }
+    
+            img {
+                width: 1em;
+            }
+    
+            h4 {
+                padding: 1em 0;
+            }
+        }
+    
+        .content-features:not(:last-child) {
+            // margin-bottom: 0.9em;
+        }
+    }
+    
+}
+
+.pricing {
+    background-color: black;
+    color: white;
+    text-align: center;
+
+    .pricing-content {
+        width: 80%;
+        margin: 0 auto;
+        // text-align: left;
+
+        .pricing-content-features {
+            padding: 2em;
+            margin-bottom: 2em;
+
+            @media  screen and (min-width: 1024px) {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                row-gap: 10px;
+                // margin-right: 2em;
+            }
+
+            .features-background {
+                background-color: white;
+                padding: 3em 1em 1.3em;
+                margin-bottom: 0.7em;
+                // background-color: red;
+                // padding-bottom: 1em;
+                // width: 100%;
+
+                h4{
+                    color: black;
+                }
+
+                .pricing-features {
+                    background-color: rgba(111, 3, 244, 0.956);
+                    padding: 0.5em 14px;
+                    text-align: left;
+
+                    .pricing-features-content {
+
+                        .tag1-new {
+                            // padding: 10em;
+                        }
+
+                        input {
+                            padding: 0.5em 1.2em;
+                            font-weight: bold;
+                            // color: black;
+                        }
+    
+                        .tag1 {
+                            padding-bottom: 6em;
+                        }
+    
+                        .price {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            border-bottom: 3px solid white;
+                            padding: 1.5em 0;
+                            margin: 1em;
+                        }
+    
+                        .price1 {
+                            display: flex;
+                            justify-content: space-between;
+                        }
+
+                        .price-2 {
+                            display: grid;
+                            grid-template-columns: 1fr 1fr;
+                        }
+                    }
+                } 
+            }
+        }
+        
+    }
+}
+
+
+.testimonial {
+    background-color: white;
+    color: white;
+    text-align: center;
+    line-height: 1.5;
+
+    @media  screen and (min-width: 1024px) {
+        // padding: 4em;
+    }
+    
+
+    .testimonial-content1 {
+
+        @media  screen and (min-width: 1024px) {
+            width: fit-content;
+            display: flex;
+            gap: 2em;
+            margin: auto;
+            justify-content: center;
+            align-items: center;
+            // text-align: center;
+            // margin: 0 6em;
+        }
+    }
+
+        .testimonial-report {
+            width: 300px;
+            margin: 0 auto;
+
+            @media screen and (min-width: 1024px) {
+                width: 300px;
+                margin: 0 auto;
+            }
+        }
+    
+
+    .statement {
+        color: black;
+    }
+
+    h3 {
+        // font-size: 1.5em;
+        // color: black;
+        // line-height: 1.2;
+    }
+
+    .testimonial-report {
+        background-color: rgba(111, 3, 244, 0.956);
+        padding: 2em 1em 1.2em;
+        margin: auto;
+
+        img {
+            width: 3em;
+            border-radius:50%;
+            border: 3px solid white;
+        }
+    }
+}
+
+.footer {
+    background-color: black;
+    color: white;
+
+    .footer-content {
+        width: 80%;
+        margin: 0 auto;
+
+        @media screen and (min-width: 1024px) {
+            width: 60%;
+            margin: 0 5.3em;
+        }
+
+        h3 {
+            font-size: 1.7em;
+            padding: 0.2em 0;
+        }
+
+        p {
+            
+        }
+
+        input {
+            padding: 0.5em;
+            border: none;
+            padding: 1em 1em;
+
+            @media screen and (min-width: 1024px) {
+                padding: 1em 1em;
+            }
+        }
+        .email {
+            margin: 1em 0;
+            width: 60%;
+        }
+
+        .email:focus {
+            outline: none;
+        }
+
+        .subscribe {
+            background-color: rgba(111, 3, 244, 0.956);
+            margin-left: -0.5em;
+            color: white;
+        }
+    }
+}
+
+@media  screen and (min-width: 1024) {
+    
+}
